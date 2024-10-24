@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Cibernética Empresarial</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #1c1e21;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #fff !important;
+        }
+        .nav-link {
+            color: #fff !important;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0;
+        }
+        .header h1 {
+            font-size: 3rem;
+            color: #ffc107;
+            margin-bottom: 20px;
+        }
+        .point {
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+        .image-container {
+            margin-bottom: 30px;
+        }
+        .numbered-column {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="topologia.html"><i class="fas fa-network-wired"></i> Topologia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projetos.html"><i class="fas fa-tasks"></i> Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seguranca.html"><i class="fas fa-lock"></i> Segurança</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cabeamento.html"><i class="fas fa-plug"></i> Cabeamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servidores.html"><i class="fas fa-server"></i> Servidores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orcamento.html"><i class="fas fa-dollar-sign"></i> Orçamento</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Destacado -->
+    <header class="header">
+        <h1>Segurança Cibernética Empresarial</h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container text-center">
+        <div class="image-container">
+            <img src="segurança.jpg" class="img-fluid rounded" alt="Segurança Cibernética">
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="point">🔒 Proteção de Dados Sensíveis</div>
+                <div class="point">🛡️ Segurança em Nuvem</div>
+            </div>
+            <div class="col-md-4">
+                <div class="point">🧩 Treinamento de Funcionários</div>
+                <div class="point">🚨 Monitoramento Contínuo</div>
+            </div>
+            <div class="col-md-4">
+                <div class="point">⚙️ Planos de Resposta a Incidentes</div>
+                <div class="point">📊 Avaliações de Risco</div>
+            </div>
+        </div>
+        <p class="mt-4">A segurança cibernética é fundamental para proteger os dados e a infraestrutura da sua empresa. Invista em soluções eficazes para mitigar riscos e garantir a continuidade dos negócios.</p>
+
+        <!-- Adicionando colunas numeradas -->
+        <div class="row mt-4">
+            <div class="col-md-2">
+                <div class="numbered-column">1. Utilize sistemas de autenticação (proxy) que permitam identificar todos os acessos com relação à internet, quem acessa e que tipo de informação estão sendo acessadas;</div>
+            </div>
+            <div class="col-md-2">
+                <div class="numbered-column">2. Configure corretamente o acesso às conexões WiFi, nunca utilizar senhas como data de nascimento, nome da empresa ou senhas somente numéricas, tente intercalar usando números, letras e caracteres especiais.</div>
+            </div>
+            <div class="col-md-2">
+                <div class="numbered-column">3. Gerencie as regras, para que o acesso total às informações só seja permitido àqueles usuários que realmente estão habilitados;</div>
+            </div>
+            <div class="col-md-2">
+                <div class="numbered-column">4. Crie uma política de segurança, que refere-se a um conjunto de regras, normas e diretrizes que estabelecem padrões desejáveis e aceitáveis de uso dos sistemas, bem como define as limitações aferidas aos usuários da rede.</div>
+            </div>
+            <div class="col-md-2">
+                <div class="numbered-column">5. Crie rotinas de backup, recomendável que sejam criadas rotinas mensais, semanais e diárias, dessa forma torna-se os dados mais seguros contra desastres onde são perdidos arquivos importantes.</div>
+            </div>
+            <div class="col-md-2">
+                <div class="numbered-column">6. Firewall é indispensável para a segurança de uma rede. Sua função consiste em controlar o tráfego de dados entre redes distintas e impedir conexões não autorizadas por parte de outras pessoas.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

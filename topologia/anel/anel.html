@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topologia de Rede em Anel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #1c1e21;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #fff !important;
+        }
+        .nav-link {
+            color: #fff !important;
+        }
+        .header {
+            background-color: #343a40;
+            color: #ffc107;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header-title {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 900px;
+        }
+        .content {
+            text-align: justify;
+            color: #e0e0e0;
+            margin-top: 20px;
+        }
+        .content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffc107;
+            text-align: center;
+        }
+        .content p, .content ol {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        .content ol {
+            padding-left: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .footer a {
+            color: #ffc107 !important;
+        }
+        .btn-primary {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #343a40;
+        }
+        .btn-primary:hover {
+            background-color: #e0a800;
+            border-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="topologia.html"><i class="fas fa-network-wired"></i> Topologia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projetos.html"><i class="fas fa-tasks"></i> Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seguranca.html"><i class="fas fa-lock"></i> Segurança</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cabeamento.html"><i class="fas fa-plug"></i> Cabeamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servidores.html"><i class="fas fa-server"></i> Servidores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orcamento.html"><i class="fas fa-dollar-sign"></i> Orçamento</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Destacado -->
+    <header class="header">
+        <h1 class="header-title">Topologia de Rede em Anel</h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <!-- Texto Explicativo -->
+        <div class="content">
+            <h2>O que é a Topologia de Rede em Anel?</h2>
+            <p>A topologia de rede em anel é um tipo de configuração onde cada dispositivo está conectado a dois outros dispositivos, formando um anel fechado. Essa topologia permite que os dados sejam transmitidos de forma sequencial através dos dispositivos conectados, seguindo um caminho em uma direção específica.</p>
+            <p>Um dos principais benefícios dessa topologia é a simplicidade de adição de novos dispositivos sem afetar o restante da rede. No entanto, uma falha em qualquer parte do anel pode resultar na interrupção total da rede, a menos que uma conexão redundante seja configurada.</p>
+            <p>Veja abaixo um passo a passo de como implementar uma topologia de rede em anel:</p>
+            <ol>
+                <li><strong>Planejamento da Rede:</strong> Defina quantos dispositivos serão conectados e identifique o caminho físico que o anel seguirá.</li>
+                <li><strong>Conexão dos Dispositivos:</strong> Conecte cada dispositivo ao próximo, garantindo que todos estejam conectados em um anel fechado. Use cabos de rede apropriados e de boa qualidade.</li>
+                <li><strong>Configuração de Endereços IP:</strong> Assegure-se de que todos os dispositivos estejam configurados na mesma sub-rede, evitando conflitos de IP.</li>
+                <li><strong>Teste de Conectividade:</strong> Verifique a conectividade entre todos os dispositivos, garantindo que os dados possam percorrer todo o anel sem interrupções.</li>
+                <li><strong>Implementação de Redundância:</strong> Caso necessário, adicione um segundo anel de backup para garantir que a rede continue funcionando mesmo se uma conexão falhar.</li>
+                <li><strong>Monitoramento Contínuo:</strong> Monitore a rede regularmente para identificar e resolver quaisquer problemas que possam surgir.</li>
+            </ol>
+        </div>
+
+        <!-- Imagem Ilustrativa -->
+        <div class="image-container">
+            <img src="anel.png" class="img-fluid rounded" alt="Topologia de Rede em Anel">
+            <p class="mt-2 text-muted">Diagrama ilustrativo de uma topologia de rede em anel.</p>
+        </div>
+
+        <!-- Link para Vídeo -->
+        <div class="content text-center">
+            <h2>Veja o Vídeo Explicativo</h2>
+            <p>Para mais detalhes, veja o vídeo explicativo abaixo sobre como configurar uma topologia de rede em anel:</p>
+            <a href="https://www.youtube.com/watch?v=u2qg_QbC_M8" target="_blank" class=

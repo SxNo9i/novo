@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topologia de Rede em Malha</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #1c1e21;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #fff !important;
+        }
+        .nav-link {
+            color: #fff !important;
+        }
+        .header {
+            background-color: #343a40;
+            color: #ffc107;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header-title {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 900px;
+        }
+        .content {
+            text-align: justify;
+            color: #e0e0e0;
+            margin-top: 20px;
+        }
+        .content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffc107;
+            text-align: center;
+        }
+        .content p, .content ol {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        .content ol {
+            padding-left: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .footer a {
+            color: #ffc107 !important;
+        }
+        .btn-primary {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #343a40;
+        }
+        .btn-primary:hover {
+            background-color: #e0a800;
+            border-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="topologia.html"><i class="fas fa-network-wired"></i> Topologia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projetos.html"><i class="fas fa-tasks"></i> Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seguranca.html"><i class="fas fa-lock"></i> Segurança</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cabeamento.html"><i class="fas fa-plug"></i> Cabeamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servidores.html"><i class="fas fa-server"></i> Servidores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orcamento.html"><i class="fas fa-dollar-sign"></i> Orçamento</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Destacado -->
+    <header class="header">
+        <h1 class="header-title">Topologia de Rede em Malha</h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <!-- Texto Explicativo -->
+        <div class="content">
+            <h2>O que é a Topologia de Rede em Malha?</h2>
+            <p>A topologia de rede em malha é um tipo de configuração em que todos os dispositivos na rede estão conectados uns aos outros de maneira direta. Isso cria uma rede extremamente robusta, onde cada nó está interligado a todos os outros, garantindo múltiplos caminhos para o tráfego de dados. Se um caminho falha, há outras rotas alternativas para a comunicação, aumentando a resiliência e a disponibilidade da rede.</p>
+            <p>Existem dois tipos principais de topologia em malha: a malha completa, onde todos os dispositivos estão conectados a todos os outros diretamente, e a malha parcial, onde apenas alguns dispositivos estão interconectados. Essa topologia é amplamente utilizada em redes que exigem alta confiabilidade e redundância, como em redes militares ou sistemas de telecomunicações.</p>
+            <p>Veja abaixo um passo a passo de como configurar uma topologia de rede em malha:</p>
+            <ol>
+                <li><strong>Planejamento da Rede:</strong> Identifique todos os dispositivos que precisarão estar conectados e determine se será uma malha completa ou parcial.</li>
+                <li><strong>Conexão dos Dispositivos:</strong> Em uma malha completa, cada dispositivo deve ser conectado diretamente a todos os outros dispositivos da rede. Em uma malha parcial, conecte apenas os dispositivos principais entre si.</li>
+                <li><strong>Configuração de Roteamento:</strong> Configure o roteamento dinâmico ou estático para garantir que os dados possam encontrar o melhor caminho através da rede. Protocolos como OSPF ou EIGRP são comumente usados.</li>
+                <li><strong>Teste de Conectividade:</strong> Verifique se todos os dispositivos podem se comunicar uns com os outros, testando múltiplos caminhos para cada dispositivo, assegurando que a redundância esteja funcionando.</li>
+                <li><strong>Monitoramento da Rede:</strong> Utilize ferramentas de monitoramento de rede para verificar a utilização do link e a integridade dos caminhos alternativos.</li>
+                <li><strong>Manutenção e Atualização:</strong> Faça atualizações regulares na configuração do roteamento e nas conexões físicas para garantir que a rede mantenha sua alta disponibilidade e desempenho.</li>
+            </ol>
+        </div>
+
+        <!-- Imagem Ilustrativa -->
+        <div class="image-container">
+            <img src="malha.png" class="img-fluid rounded" alt="Topologia de Rede em Malha">
+            <p class="mt-2 text-muted">Diagrama ilustrativo de uma topologia de rede em malha.</p>
+        </div>
+
+        <!-- Link para Vídeo -->
+        <div class="content text-center">
+            <h2>Veja o Vídeo Explicativo</h2>
+            <p>Para mais detalhes, veja o vídeo explicativo abaixo sobre como configurar uma topologia de rede em malha:</p>
+            <a href="https://www.youtube.com/watch?v=JWAnemv9pIc" target="_blank" class="btn btn-primary">Assistir ao Vídeo</a>
+        </div>
+    </div>
+
+    <!-- Rodapé Destacado -->
+    <footer class="footer">
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:contato@empresa.com">contato@empresa.com</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
